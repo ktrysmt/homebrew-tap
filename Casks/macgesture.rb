@@ -1,4 +1,4 @@
-cask "macgesture-selfheal" do
+cask "macgesture" do
   version "3.2.0-selfheal.1"
   sha256 "38370bc11204400ab11a9ed7fe3c4d87599e60306542641257481d25b268d76f"
 
