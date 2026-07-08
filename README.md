@@ -18,6 +18,16 @@ brew uninstall --cask macgesture
 brew install --cask ktrysmt/tap/macgesture
 ```
 
+> **Always use the fully-qualified name `ktrysmt/tap/macgesture`.**
+> This cask shares its token with the official `homebrew/cask/macgesture`, so an
+> unqualified `brew install --cask macgesture` installs the **official** build,
+> not this fork. The same rule applies in a `Brewfile` — write the full name,
+> not `tap "ktrysmt/tap"` + `cask "macgesture"`:
+>
+> ```ruby
+> cask "ktrysmt/tap/macgesture"
+> ```
+
 The build is ad-hoc signed and NOT notarized, so on first launch approve it via
 System Settings > Privacy & Security > Open Anyway, then grant Accessibility
 under System Settings > Privacy & Security > Accessibility.
