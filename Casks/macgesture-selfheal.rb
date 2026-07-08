@@ -8,7 +8,6 @@ cask "macgesture-selfheal" do
   homepage "https://github.com/ktrysmt/MacGesture"
 
   auto_updates false
-  depends_on macos: ">= :high_sierra"
 
   app "MacGesture.app"
 
